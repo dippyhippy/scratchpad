@@ -1,0 +1,25 @@
+{
+  "name": "scratchpad",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "noflo": "^0.5.11",
+    "noflo-automaton": "^0.1.6",
+    "noflo-nodejs": "0.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dippyhippy/scratchpad.git"
+  },
+  "author": "Ben Major",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dippyhippy/scratchpad/issues"
+  },
+  "homepage": "https://github.com/dippyhippy/scratchpad"
+}
