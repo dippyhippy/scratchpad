@@ -13,8 +13,8 @@
             "component": "core/Output",
             "metadata": {
                 "label": "core/Output",
-                "x": 684,
-                "y": 108,
+                "x": 432,
+                "y": 36,
                 "width": 72,
                 "height": 72
             }
@@ -23,8 +23,8 @@
             "component": "automaton/Automaton",
             "metadata": {
                 "label": "automaton/Automaton",
-                "x": 504,
-                "y": 72,
+                "x": 288,
+                "y": 36,
                 "width": 72,
                 "height": 72
             }
@@ -33,18 +33,18 @@
             "component": "scratchpad/default",
             "metadata": {
                 "label": "scratchpad/default",
-                "x": 360,
-                "y": 180,
+                "x": 144,
+                "y": 36,
                 "width": 72,
                 "height": 72
             }
         },
-        "core/Kick_nimuc": {
-            "component": "core/Kick",
+        "core/Repeat_7ido6": {
+            "component": "core/Repeat",
             "metadata": {
-                "label": "core/Kick",
-                "x": 252,
-                "y": 180,
+                "label": "core/Repeat",
+                "x": 36,
+                "y": 36,
                 "width": 72,
                 "height": 72
             }
@@ -86,7 +86,7 @@
         },
         {
             "src": {
-                "process": "core/Kick_nimuc",
+                "process": "core/Repeat_7ido6",
                 "port": "out"
             },
             "tgt": {
@@ -98,8 +98,8 @@
         {
             "data": "#",
             "tgt": {
-                "process": "core/Kick_nimuc",
-                "port": "data"
+                "process": "core/Repeat_7ido6",
+                "port": "in"
             }
         }
     ]
