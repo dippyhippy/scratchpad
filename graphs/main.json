@@ -29,12 +29,22 @@
                 "height": 72
             }
         },
-        "automaton/Rule_9ga5c": {
-            "component": "automaton/Rule",
+        "scratchpad/default_hk74y": {
+            "component": "scratchpad/default",
             "metadata": {
-                "label": "automaton/Rule",
-                "x": 324,
-                "y": 72,
+                "label": "scratchpad/default",
+                "x": 360,
+                "y": 180,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "core/Kick_nimuc": {
+            "component": "core/Kick",
+            "metadata": {
+                "label": "core/Kick",
+                "x": 252,
+                "y": 180,
                 "width": 72,
                 "height": 72
             }
@@ -65,7 +75,7 @@
         },
         {
             "src": {
-                "process": "automaton/Rule_9ga5c",
+                "process": "scratchpad/default_hk74y",
                 "port": "out"
             },
             "tgt": {
@@ -75,13 +85,21 @@
             "metadata": {}
         },
         {
-            "data": {
-                "action": "start",
-                "url": "http://www.google.com"
+            "src": {
+                "process": "core/Kick_nimuc",
+                "port": "out"
             },
             "tgt": {
-                "process": "automaton/Rule_9ga5c",
+                "process": "scratchpad/default_hk74y",
                 "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "data": "#",
+            "tgt": {
+                "process": "core/Kick_nimuc",
+                "port": "data"
             }
         }
     ]
