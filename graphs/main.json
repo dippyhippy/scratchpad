@@ -8,6 +8,59 @@
     "inports": {},
     "outports": {},
     "groups": [],
-    "processes": {},
-    "connections": []
+    "processes": {
+        "automaton/Start_w06rk": {
+            "component": "automaton/Start",
+            "metadata": {
+                "label": "automaton/Start",
+                "x": 334,
+                "y": 100,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "core/Output_71wlo": {
+            "component": "core/Output",
+            "metadata": {
+                "label": "core/Output",
+                "x": 612,
+                "y": 108,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "automaton/Start_w06rk",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "core/Output_71wlo",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "src": {
+                "process": "automaton/Start_w06rk",
+                "port": "error"
+            },
+            "tgt": {
+                "process": "core/Output_71wlo",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "data": {
+                "url": "http://www.google.com"
+            },
+            "tgt": {
+                "process": "automaton/Start_w06rk",
+                "port": "in"
+            }
+        }
+    ]
 }
