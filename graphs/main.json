@@ -9,22 +9,32 @@
     "outports": {},
     "groups": [],
     "processes": {
-        "automaton/Start_w06rk": {
-            "component": "automaton/Start",
-            "metadata": {
-                "label": "automaton/Start",
-                "x": 334,
-                "y": 100,
-                "width": 72,
-                "height": 72
-            }
-        },
         "core/Output_71wlo": {
             "component": "core/Output",
             "metadata": {
                 "label": "core/Output",
-                "x": 612,
+                "x": 684,
                 "y": 108,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "automaton/Automaton_88ugm": {
+            "component": "automaton/Automaton",
+            "metadata": {
+                "label": "automaton/Automaton",
+                "x": 504,
+                "y": 72,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "automaton/Rule_9ga5c": {
+            "component": "automaton/Rule",
+            "metadata": {
+                "label": "automaton/Rule",
+                "x": 324,
+                "y": 72,
                 "width": 72,
                 "height": 72
             }
@@ -33,7 +43,18 @@
     "connections": [
         {
             "src": {
-                "process": "automaton/Start_w06rk",
+                "process": "automaton/Automaton_88ugm",
+                "port": "error"
+            },
+            "tgt": {
+                "process": "core/Output_71wlo",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "src": {
+                "process": "automaton/Automaton_88ugm",
                 "port": "out"
             },
             "tgt": {
@@ -44,21 +65,22 @@
         },
         {
             "src": {
-                "process": "automaton/Start_w06rk",
-                "port": "error"
+                "process": "automaton/Rule_9ga5c",
+                "port": "out"
             },
             "tgt": {
-                "process": "core/Output_71wlo",
-                "port": "in"
+                "process": "automaton/Automaton_88ugm",
+                "port": "rules"
             },
             "metadata": {}
         },
         {
             "data": {
+                "action": "start",
                 "url": "http://www.google.com"
             },
             "tgt": {
-                "process": "automaton/Start_w06rk",
+                "process": "automaton/Rule_9ga5c",
                 "port": "in"
             }
         }
