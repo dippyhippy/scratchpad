@@ -16,7 +16,7 @@ exports.getComponent = ->
   c.inPorts.add 'in', {datatype:'bang'}, (event, payload) ->
     
     # Do something with the packet, then
-    c.outPorts.out.send rule
+    c.outPorts.out.send rules
  
   c.outPorts.add 'out', {datatype: "array"}
   
