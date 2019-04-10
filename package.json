@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "noflo": "^0.5.11",
+    "noflo": "^0.8.0",
     "noflo-automaton": "^0.1.6",
-    "noflo-nodejs": "0.0.6"
+    "noflo-nodejs": "0.8.0",
+    "snyk": "^1.149.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -21,5 +24,6 @@
   "bugs": {
     "url": "https://github.com/dippyhippy/scratchpad/issues"
   },
-  "homepage": "https://github.com/dippyhippy/scratchpad"
+  "homepage": "https://github.com/dippyhippy/scratchpad",
+  "snyk": true
 }
