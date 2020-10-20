@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "noflo": "^0.5.11",
+    "noflo": "^0.8.0",
     "noflo-automaton": "^0.1.6",
-    "noflo-nodejs": "0.0.6"
+    "noflo-nodejs": "0.8.0"
   },
   "devDependencies": {},
   "scripts": {
